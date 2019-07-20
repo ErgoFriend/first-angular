@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+//colors
+$color_dodger_blue_approx: #2196f3
+$white: #ffffff
+$color_log_cabin_approx: #212121
+
+.button
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 35px
+	width: 135px
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 4px
+	background-color: $color_dodger_blue_approx
+	color: $white
+	font-size: 14px
+	line-height: 21px
+	cursor: pointer
+	&.black
+		background-color: $color_log_cabin_approx
+	&.white
+		color: $color_log_cabin_approx
+		background-color: $white
+		border: 1px solid $color_log_cabin_approx
